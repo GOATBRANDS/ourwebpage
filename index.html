@@ -2,8 +2,8 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G.O.A.T. BRANDS – Greatest of All Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G.O.A.T. Brands – Greatest of All Time</title>
   <style>
     body {
       margin: 0;
@@ -20,6 +20,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      z-index: 1000;
     }
     header h1 {
       margin: 0;
@@ -50,7 +51,7 @@
     }
     section {
       padding: 60px 40px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
     section h3 {
@@ -58,8 +59,40 @@
       color: #ffa500;
       margin-bottom: 20px;
     }
+    .profile {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .profile img {
+      width: 220px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .profile div {
+      flex: 1;
+      min-width: 250px;
+    }
     ul {
       padding-left: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
@@ -73,7 +106,7 @@
 <body>
 
   <header>
-    <h1>GOAT BRANDS</h1>
+    <h1>G.O.A.T. Brands</h1>
     <nav>
       <a href="#about">Über uns</a>
       <a href="#vision">Vision</a>
@@ -83,33 +116,52 @@
 
   <div class="hero">
     <h2>Greatest of All Time</h2>
-    <p>The Home of Better Consumer Brands – wir starten mit Getränken, aber denken weiter.</p>
+    <p>Home of Future Consumer Brands – wir starten mit Getränken, aber denken weiter.</p>
   </div>
 
   <section id="about">
     <h3>Über uns</h3>
-    <p><strong>Ferdinand Barckhahn</strong> – CEO & Co-Founder<br />
-    <strong>Henner Rinsche</strong> – Co-Founder</p>
-    <p>Wir sind zwei erfahrene FMCG-Manager mit über 40 Jahren kombinierter Branchenerfahrung in blue-chip FMCG Firmen (P&G, PepsiCo, Danone, Henkel, Pernod Ricard, SodaStream, Congo Brands (PRIME). Von der globalen Markenführung bis zum Markteintritt neuer Produkte – wir wissen, wie man Konsumenten begeistert und Märkte gewinnt.</p>
+    <p>Wir sind zwei erfahrene FMCG-Manager mit über 40 Jahren kombinierter Branchenerfahrung in blue-chip FMCG-Unternehmen wie <strong>P&G</strong>, <strong>PepsiCo</strong>, <strong>Danone</strong>, <strong>Henkel</strong>, <strong>Pernod Ricard</strong>, <strong>SodaStream</strong> und <strong>Congo Brands (PRIME)</strong>. Wir stehen für strategischen Markenaufbau, internationale Skalierung und tiefes Branchenverständnis – von globalen Konzernen bis zur disruptiven Innovation.</p>
+
+    <div class="profile">
+      <img src="ferdinand.jpg" alt="Ferdinand Barckhahn (Platzhalter)">
+      <div>
+        <h4>Ferdinand Barckhahn</h4>
+        <p>CEO & Co-Founder – FMCG-Stratege mit Leidenschaft für Markenentwicklung. Jahrzehntelange Führungserfahrung im internationalen Beverage-Sektor.</p>
+      </div>
+    </div>
+    <div class="profile">
+      <img src="henner.jpg" alt="Henner Rinsche (Platzhalter)">
+      <div>
+        <h4>Henner Rinsche</h4>
+        <p>Co-Founder – erfolgreicher Innovator im Konsumgüterbereich. Spezialist für Skalierung, Vertrieb und globales Markenwachstum.</p>
+      </div>
+    </div>
   </section>
 
   <section id="vision">
-    <h3>Was GOAT BRANDS auszeichnet</h3>
-    <ul>
-      <li>Langjährige Führungserfahrung im FMCG- und Beverage-Bereich</li>
-      <li>Markenentwicklung, Vertrieb, Strategie & Skalierung</li>
-      <li>Netzwerk im Einzelhandel, bei Produzenten & Investoren</li>
-      <li>Leidenschaft für Marken mit Haltung & Zukunft</li>
-    </ul>
+    <h3>Unsere Kategorien</h3>
+    <p>G.O.A.T. Brands steht für Vielfalt: Unsere Expertise beginnt mit Getränken – endet aber nicht dort. Ob Süßwaren, Lifestyle-Produkte oder Spirituosen: Wir bauen, was bewegt.</p>
+    <div class="gallery">
+      <img src="beverage.jpg" alt="Getränke (Platzhalter)">
+      <img src="candy.jpg" alt="Süßwaren (Platzhalter)">
+      <img src="spirits.jpg" alt="Spirituosen (Platzhalter)">
+    </div>
   </section>
 
   <section id="mission">
     <h3>Unsere Mission</h3>
-    <p>GOAT steht für <strong>Greatest of All Time</strong>. Unser Anspruch ist es, Marken aufzubauen, die nicht nur kurzfristig funktionieren, sondern langfristig Kultstatus erreichen – in Getränken und darüber hinaus.</p>
+    <p>G.O.A.T. steht für <strong>Greatest of All Time</strong>. Unser Ziel: Marken zu entwickeln, die heute relevant und morgen unvergesslich sind – mit Haltung, Innovationskraft und messbarem Erfolg.</p>
+    <ul>
+      <li>Langjährige Erfahrung in FMCG und Beverage</li>
+      <li>Strategie, Vertrieb, Internationalisierung</li>
+      <li>Starke Netzwerke & agile Umsetzung</li>
+      <li>Marken, die im Regal und im Kopf bleiben</li>
+    </ul>
   </section>
 
   <footer>
-    &copy; 2025 GOAT BRANDS. All rights reserved.
+    &copy; 2025 G.O.A.T. Brands. All rights reserved.
   </footer>
 
 </body>
