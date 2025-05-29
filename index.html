@@ -7,7 +7,7 @@
   <style>
     body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #fff; color: #222; }
     header { background: #000; color: #fff; padding: 20px 40px; position: sticky; top: 0; z-index: 1000; }
-    .header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .header-content { display: flex; justify-content: space-between; align-items: center; }
     .logo { font-size: 1.5rem; letter-spacing: 1px; }
     .nav-toggle { display: none; font-size: 1.5rem; cursor: pointer; background: none; border: none; color: #fff; }
     nav { display: flex; gap: 20px; align-items: center; }
@@ -27,6 +27,7 @@
     .profile { display: flex; gap: 40px; flex-wrap: wrap; align-items: center; margin-bottom: 40px; }
     .profile img { width: 220px; border-radius: 12px; object-fit: cover; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     .profile div { flex: 1; min-width: 250px; }
+    ul { padding-left: 20px; }
     .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
     .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
     footer { text-align: center; padding: 40px; background-color: #f5f5f5; font-size: 0.9rem; color: #555; }
@@ -74,71 +75,36 @@
   <div id="content-de">
     <section id="about">
       <h3>Über uns</h3>
-      <p>Wir sind zwei erfahrene FMCG-Manager mit über 40 Jahren kombinierter Branchenerfahrung. Unsere Stationen: P&G, PepsiCo, Danone, Henkel, Pernod Ricard, Leifheit, SodaStream und Congo Brands (PRIME).</p>
+      <p>Wir sind zwei erfahrene FMCG-Manager mit über 40 Jahren kombinierter Branchenerfahrung in blue-chip FMCG-Unternehmen wie <strong>P&G</strong>, <strong>PepsiCo</strong>, <strong>Danone</strong>, <strong>Henkel</strong>, <strong>Pernod Ricard</strong>, <strong>Leifheit</strong>, <strong>SodaStream</strong> und <strong>Congo Brands (PRIME)</strong>. Wir stehen für strategischen Markenaufbau, internationale Skalierung und tiefes Branchenverständnis. Auf jedem unserer beruflichen Stationen konnten wir messbares Marktanteils-, Umsatz- und Gewinnwachstum erzielen.</p>
       <div class="profile">
         <img src="images/ferdinand.jpg" alt="Ferdinand Barckhahn">
         <div>
           <h4>Ferdinand Barckhahn</h4>
-          <p>CEO & Co-Founder – FMCG-Stratege mit Leidenschaft für Markenentwicklung. Erfahrung bei PepsiCo, Danone, Pernod Ricard, SodaStream und PRIME.</p>
+          <p>CEO & Co-Founder – FMCG-Stratege mit Leidenschaft für lokale und internationale Marken- und Geschäftsentwicklung. Jahrzehntelange Führungserfahrung im internationalen FMCG-Sektor (Fokus:Getränke) bei PepsiCo, Danone, Novartis, Pernod Ricard, Sodastream und Congo Brands (PRIME).</p>
         </div>
       </div>
       <div class="profile">
         <img src="images/henner.jpg" alt="Henner Rinsche">
         <div>
           <h4>Henner Rinsche</h4>
-          <p>Co-Founder – Innovator mit Erfolgen bei SodaStream und Leifheit. Fokus: disruptive Marken, nachhaltiger Markterfolg.</p>
+          <p>Co-Founder – Visionärer Innovator im FMCG-Bereich mit starker Erfolgsbilanz bei internationalen Marken. Er führte bahnbrechende Entwicklungen bei führenden Unternehmen wie SodaStream und Leifheit.</p>
         </div>
       </div>
     </section>
 
     <section id="mission">
       <h3>Mission & Vision</h3>
-      <p><strong>Mission:</strong> Wir entwickeln und skalieren die besten Marken ihrer Zeit – mit Exzellenz, Konsumentenverständnis und FMCG-Erfahrung.</p>
-      <p><strong>Vision:</strong> Marken, die Menschen lieben – weil sie inspirieren, Energie geben und den Alltag bereichern. Global gedacht, lokal verankert.</p>
+      <p><strong>Mission:</strong> Wir entwickeln und skalieren die <em>besten Marken ihrer Zeit</em> – zunächst im Getränkesegment, später darüber hinaus. Getrieben von Exzellenz, Konsumentenverständnis und jahrzehntelanger FMCG-Erfahrung.</p>
+      <p><strong>Vision:</strong> Wir schaffen Marken, die Menschen nicht nur konsumieren – sondern lieben. Marken, die Energie geben, inspirieren und den Alltag bereichern. Weltweit skaliert, lokal verankert.</p>
     </section>
 
     <section id="brands">
-      <h3>Unsere Produkte (Work in Progress)</h3>
+      <h3>Unsere Produkte</h3>
+      <p><em>Work in progress: Wir entwickeln aktuell unser erstes Getränkekonzept.</em></p>
       <div class="gallery">
         <img src="images/beverage1.jpg" alt="Getränk 1">
         <img src="images/beverage2.jpg" alt="Getränk 2">
         <img src="images/beverage3.jpg" alt="Getränk 3">
-      </div>
-    </section>
-  </div>
-
-  <div id="content-en" class="hidden">
-    <section id="about">
-      <h3>About us</h3>
-      <p>We are two experienced FMCG leaders with 40+ years of combined experience at P&G, PepsiCo, Danone, Henkel, Pernod Ricard, Leifheit, SodaStream, and Congo Brands (PRIME).</p>
-      <div class="profile">
-        <img src="images/ferdinand.jpg" alt="Ferdinand Barckhahn">
-        <div>
-          <h4>Ferdinand Barckhahn</h4>
-          <p>CEO & Co-Founder – Strategist with a passion for building brands. Track record at PepsiCo, Danone, Pernod Ricard, SodaStream and PRIME.</p>
-        </div>
-      </div>
-      <div class="profile">
-        <img src="images/henner.jpg" alt="Henner Rinsche">
-        <div>
-          <h4>Henner Rinsche</h4>
-          <p>Co-Founder – Proven innovator with impact at SodaStream and Leifheit. Expert in disruptive growth and consumer connection.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="mission">
-      <h3>Mission & Vision</h3>
-      <p><strong>Mission:</strong> We build and scale the greatest brands of their time – with excellence, consumer obsession, and deep FMCG expertise.</p>
-      <p><strong>Vision:</strong> Brands people don't just use – but love. That inspire, energize, and elevate everyday life. Globally scalable, locally relevant.</p>
-    </section>
-
-    <section id="brands">
-      <h3>Our Products (Work in Progress)</h3>
-      <div class="gallery">
-        <img src="images/beverage1.jpg" alt="Beverage 1">
-        <img src="images/beverage2.jpg" alt="Beverage 2">
-        <img src="images/beverage3.jpg" alt="Beverage 3">
       </div>
     </section>
   </div>
