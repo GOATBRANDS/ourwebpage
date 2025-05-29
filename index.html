@@ -3,24 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="G.O.A.T. Brands – die besten FMCG-Marken der Gegenwart und Zukunft." />
-  <meta name="author" content="G.O.A.T. Brands UG (haftungsbeschränkt) i.Gr." />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="G.O.A.T. Brands – Greatest of All Time" />
-  <meta property="og:description" content="Erfahrene Gründer. Starke Marken. Großes vor." />
-  <meta property="og:image" content="images/social-preview.jpg" />
-  <meta property="og:url" content="https://www.goat-brands.com" />
   <title>G.O.A.T. Brands – Greatest of All Time</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <style>
     body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #fff; color: #222; }
-    header { background: #000; color: #fff; padding: 20px 40px; position: sticky; top: 0; z-index: 1000; }
-    .header-content { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.5rem; letter-spacing: 1px; }
-    .nav-toggle { display: none; font-size: 1.5rem; cursor: pointer; background: none; border: none; color: #fff; }
-    nav { display: flex; gap: 20px; align-items: center; }
+    header { background: #000; color: #fff; padding: 20px 40px; position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; z-index: 1000; flex-wrap: wrap; }
+    header h1 { margin: 0; font-size: 1.5rem; letter-spacing: 1px; }
+    nav { display: flex; flex-wrap: wrap; gap: 15px; margin-left: auto; }
     nav a { color: #fff; text-decoration: none; font-weight: 500; }
-    .language-switcher { color: #fff; font-size: 0.9rem; cursor: pointer; }
+    .language-switcher { font-size: 0.9rem; cursor: pointer; margin-left: 15px; color: #fff; }
     .hero {
       padding: 100px 40px 60px;
       background: url('images/FruitBasket.jpg') center/cover no-repeat;
@@ -38,40 +29,27 @@
     .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
     .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
     footer { text-align: center; padding: 40px; background-color: #f5f5f5; font-size: 0.9rem; color: #555; }
-    .hidden { display: none; }
     footer a { color: #555; text-decoration: none; margin: 0 10px; }
     footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 768px) {
-      nav { display: none; flex-direction: column; background-color: #000; width: 100%; margin-top: 10px; }
-      nav.show { display: flex; }
-      .nav-toggle { display: block; }
-      .gallery img { width: 90vw; height: auto; }
-    }
+    .hidden { display: none; }
   </style>
   <script>
     function switchLanguage(lang) {
       document.getElementById('content-de').classList.toggle('hidden', lang !== 'de');
       document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
     }
-    function toggleMenu() {
-      document.querySelector('nav').classList.toggle('show');
-    }
   </script>
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <div class="logo">G.O.A.T. BRANDS</div>
-      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
-      <nav>
-        <a href="#about">About us / Über uns</a>
-        <a href="#brands">Unsere Produkte</a>
-        <a href="#mission">Mission / Vision</a>
-        <div class="language-switcher">
-          <span onclick="switchLanguage('de')">DE</span> | <span onclick="switchLanguage('en')">EN</span>
-        </div>
-      </nav>
+    <h1>G.O.A.T. BRANDS</h1>
+    <nav>
+      <a href="#about">Über uns</a>
+      <a href="#brands">Unsere Produkte</a>
+      <a href="#mission">Mission / Vision</a>
+    </nav>
+    <div class="language-switcher">
+      <span onclick="switchLanguage('de')">DE</span> | <span onclick="switchLanguage('en')">EN</span>
     </div>
   </header>
 
@@ -107,11 +85,49 @@
     </section>
 
     <section id="brands">
-      <h3>Unsere Produkte <span style="font-size: 0.8rem; color: #888;">(work in progress)</span></h3>
+      <h3>Unsere Produkte</h3>
+      <p><em>Work in progress – wir arbeiten mit Hochdruck an spannenden Innovationen!</em></p>
       <div class="gallery">
         <img src="images/beverage1.jpg" alt="Getränk 1">
         <img src="images/beverage2.jpg" alt="Getränk 2">
         <img src="images/beverage3.jpg" alt="Getränk 3">
+      </div>
+    </section>
+  </div>
+
+  <div id="content-en" class="hidden">
+    <section id="about">
+      <h3>About us</h3>
+      <p>We are two experienced FMCG executives with over 40 years of combined industry experience in blue-chip FMCG companies including <strong>P&G</strong>, <strong>PepsiCo</strong>, <strong>Danone</strong>, <strong>Henkel</strong>, <strong>Pernod Ricard</strong>, <strong>Leifheit</strong>, <strong>SodaStream</strong> and <strong>Congo Brands (PRIME)</strong>. We stand for strategic brand building, international scaling and deep market understanding. At every stage of our careers, we have achieved measurable growth in market share, revenue and profit.</p>
+      <div class="profile">
+        <img src="images/ferdinand.jpg" alt="Ferdinand Barckhahn">
+        <div>
+          <h4>Ferdinand Barckhahn</h4>
+          <p>CEO & Co-Founder – FMCG strategist with a passion for local and international brand and business development. Decades of leadership experience in the global FMCG sector (focus: beverages) at PepsiCo, Danone, Novartis, Pernod Ricard, Sodastream and Congo Brands (PRIME).</p>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="images/henner.jpg" alt="Henner Rinsche">
+        <div>
+          <h4>Henner Rinsche</h4>
+          <p>Co-Founder – Visionary innovator in the FMCG sector with a strong track record of building global brands. Led groundbreaking developments at top companies including SodaStream and Leifheit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission">
+      <h3>Mission & Vision</h3>
+      <p><strong>Mission:</strong> We create and scale the <em>greatest brands of their time</em> – starting with beverages, expanding into new categories. Driven by excellence, consumer obsession, and decades of FMCG experience.</p>
+      <p><strong>Vision:</strong> We build brands that people don’t just consume – they love. Brands that energize, inspire and enrich everyday life. Scaled globally, rooted locally.</p>
+    </section>
+
+    <section id="brands">
+      <h3>Our Products</h3>
+      <p><em>Work in progress – we're working hard on exciting innovations!</em></p>
+      <div class="gallery">
+        <img src="images/beverage1.jpg" alt="Beverage 1">
+        <img src="images/beverage2.jpg" alt="Beverage 2">
+        <img src="images/beverage3.jpg" alt="Beverage 3">
       </div>
     </section>
   </div>
