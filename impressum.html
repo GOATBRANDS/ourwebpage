@@ -1,38 +1,86 @@
-<h1>Impressum</h1>
-<p><strong>Angaben gemäß § 5 TMG</strong></p>
-<p>
-  G.O.A.T. Brands UG (haftungsbeschränkt) i. Gr.<br>
-  Ernst-Ludwig-Straße 89<br>
-  63329 Egelsbach<br>
-  Deutschland
-</p>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Impressum – G.O.A.T. Brands UG (haftungsbeschränkt) i.Gr." />
+  <meta name="author" content="G.O.A.T. Brands UG (haftungsbeschränkt) i.Gr." />
+  <meta name="robots" content="index, follow" />
+  <title>Impressum – G.O.A.T. Brands</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <style>
+    body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #fff; color: #222; }
+    header { background: #000; color: #fff; padding: 20px 40px; position: sticky; top: 0; z-index: 1000; }
+    .header-content { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; letter-spacing: 1px; }
+    .nav-toggle { display: none; font-size: 1.5rem; cursor: pointer; background: none; border: none; color: #fff; }
+    nav { display: flex; gap: 20px; align-items: center; }
+    nav a { color: #fff; text-decoration: none; font-weight: 500; }
+    section { padding: 60px 40px; max-width: 1000px; margin: auto; }
+    section h1 { font-size: 2rem; color: #ffa500; margin-bottom: 20px; }
+    section p, section address { line-height: 1.6; margin-bottom: 20px; }
+    footer { text-align: center; padding: 40px; background-color: #f5f5f5; font-size: 0.9rem; color: #555; }
+    footer a { color: #555; text-decoration: none; margin: 0 10px; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 768px) {
+      nav { display: none; flex-direction: column; background-color: #000; width: 100%; margin-top: 10px; }
+      nav.show { display: flex; }
+      .nav-toggle { display: block; }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector('nav').classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">G.O.A.T. BRANDS</div>
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <nav>
+        <a href="index.html#about">Über uns</a>
+        <a href="index.html#brands">Unsere Produkte</a>
+        <a href="index.html#mission">Mission / Vision</a>
+      </nav>
+    </div>
+  </header>
 
-<p><strong>Vertreten durch:</strong><br>
-Ferdinand Barckhahn, Henner Rinsche
-</p>
+  <section>
+    <h1>Impressum</h1>
+    <p><strong>Angaben gemäß § 5 TMG:</strong></p>
+    <address>
+      G.O.A.T. Brands UG (haftungsbeschränkt) i.Gr.<br>
+      Ernst-Ludwig-Straße 89<br>
+      63329 Egelsbach<br>
+      Deutschland
+    </address>
 
-<p><strong>Kontakt:</strong><br>
-E-Mail: <a href="mailto:info@goat-brands.com">info@goat-brands.com</a>
-</p>
+    <p><strong>Vertreten durch die Geschäftsführer:</strong><br>
+    Ferdinand Barckhahn, Henner Rinsche</p>
 
-<p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
-Ferdinand Barckhahn<br>
-Ernst-Ludwig-Straße 89<br>
-63329 Egelsbach
-</p>
+    <p><strong>Kontakt:</strong><br>
+    E-Mail: <a href="mailto:info@goat-brands.com">info@goat-brands.com</a></p>
 
-<p><strong>Handelsregister:</strong><br>
-Eintragung in Vorbereitung<br>
-Registergericht: Amtsgericht Offenbach (voraussichtlich)
-</p>
+    <p><strong>Registereintrag:</strong><br>
+    Eintragung im Handelsregister: ausstehend<br>
+    Registergericht: Darmstadt</p>
 
-<p><strong>Umsatzsteuer-ID:</strong><br>
-Noch nicht vergeben
-</p>
+    <p><strong>Umsatzsteuer-ID:</strong><br>
+    Beantragung läuft</p>
 
-<p><strong>Hinweis auf EU-Streitschlichtung:</strong><br>
-Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:  
-<a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a>
-</p>
+    <p><strong>Haftung für Inhalte:</strong><br>
+    Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich...</p>
+    <!-- Weitere gesetzlich erforderliche Hinweise hier ergänzen -->
+  </section>
 
-<p>Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+  <footer>
+    &copy; 2025 G.O.A.T. Brands UG (haftungsbeschränkt) i.Gr. – Ernst-Ludwig-Straße 89, 63329 Egelsbach, Deutschland.<br>
+    Geschäftsführer: Ferdinand Barckhahn, Henner Rinsche<br>
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutzerklärung</a> |
+    <a href="mailto:info@goat-brands.com">Kontakt</a>
+  </footer>
+</body>
+</html>
