@@ -111,22 +111,103 @@
     </section>
   </div>
 
+  <!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G.O.A.T. Brands – Greatest of All Time</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <style>
+    body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background: #fff; color: #222; }
+    header { background: #000; color: #fff; padding: 20px 40px; position: sticky; top: 0; z-index: 1000; }
+    .header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo { font-size: 1.5rem; letter-spacing: 1px; }
+    .nav-toggle { display: none; font-size: 1.5rem; cursor: pointer; background: none; border: none; color: #fff; }
+    nav { display: flex; gap: 15px; align-items: center; }
+    nav a { color: #fff; text-decoration: none; font-weight: 500; }
+    .language-switcher { font-size: 0.9rem; cursor: pointer; margin-left: 15px; color: #fff; }
+    .hero {
+      padding: 100px 40px 60px;
+      background: url('images/FruitBasket.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+    }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 20px; color: #ffa500; }
+    .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+    section { padding: 60px 40px; max-width: 1000px; margin: auto; }
+    section h3 { font-size: 1.8rem; color: #ffa500; margin-bottom: 20px; }
+    .profile { display: flex; gap: 40px; flex-wrap: wrap; align-items: center; margin-bottom: 40px; }
+    .profile img { width: 220px; border-radius: 12px; object-fit: cover; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .profile div { flex: 1; min-width: 250px; }
+    ul { padding-left: 20px; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
+    .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    footer { text-align: center; padding: 40px; background-color: #f5f5f5; font-size: 0.9rem; color: #555; }
+    footer a { color: #555; text-decoration: none; margin: 0 10px; }
+    footer a:hover { text-decoration: underline; }
+    .hidden { display: none; }
+
+    @media (max-width: 768px) {
+      .nav-toggle { display: block; }
+      nav { display: none; flex-direction: column; background-color: #000; width: 100%; padding: 10px 0; }
+      nav.show { display: flex; }
+      nav a { padding: 10px 20px; border-top: 1px solid #333; }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('main-nav');
+      nav.classList.toggle('show');
+    }
+    function switchLanguage(lang) {
+      document.getElementById('content-de').classList.toggle('hidden', lang !== 'de');
+      document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">G.O.A.T. BRANDS</div>
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="main-nav">
+        <a href="#about">Über uns</a>
+        <a href="#brands">Unsere Produkte</a>
+        <a href="#mission">Mission / Vision</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <span class="language-switcher" onclick="switchLanguage('en')">EN</span>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h2>Welcome to G.O.A.T. BRANDS</h2>
+    <p>The home of the greatest brands of today and iconic brands in future</p>
+  </div>
+
+  <div id="content-de">
+    <!-- Bisheriger deutscher Inhalt -->
+  </div>
+
   <div id="content-en" class="hidden">
     <section id="about">
       <h3>About us</h3>
-      <p>We are two experienced FMCG executives with over 40 years of combined industry experience in blue-chip FMCG companies including <strong>P&G</strong>, <strong>PepsiCo</strong>, <strong>Danone</strong>, <strong>Henkel</strong>, <strong>Pernod Ricard</strong>, <strong>Leifheit</strong>, <strong>SodaStream</strong> and <strong>Congo Brands (PRIME)</strong>. We stand for strategic brand building, international scaling and deep market understanding. At every stage of our careers, we have achieved measurable growth in market share, revenue and profit.</p>
+      <p>Proven team with a track record of success: Ferdinand Barckhahn and Henner Rinsche launch G.O.A.T. Brands.</p>
+      <p>Ferdinand Barckhahn and Henner Rinsche share a long history of success. From 2000 to 2005, they formed a powerful team in the German beverage market: Together, they doubled Pepsi's market share in the carbonated soft drinks segment from 5% to over 10% – a remarkable achievement in a highly competitive market. They continued their careers at Danone, where from 2005 to 2008, they held key marketing positions in the fresh dairy business in Germany. Under their leadership, Danone achieved double-digit growth for several consecutive years. Their teamwork reached new heights at SodaStream: As President Europe, Henner Rinsche worked alongside Ferdinand Barckhahn, who held various senior regional roles. Together, they propelled the company to new levels of sales and profit. Between 2015 and 2018, SodaStream's share price increased tenfold, from $14 to $144. Europe became the company’s largest and most profitable region. With G.O.A.T. Brands, they now continue their journey – aiming once again for extraordinary achievements. Building on their experience in beverages, brand development, and international business, their goal is to launch innovative consumer goods that challenge the status quo.</p>
       <div class="profile">
         <img src="images/ferdinand.jpg" alt="Ferdinand Barckhahn">
         <div>
           <h4>Ferdinand Barckhahn</h4>
-          <p>CEO & Co-Founder – FMCG strategist with a passion for local and international brand and business development. Decades of leadership experience in the global FMCG sector (focus: beverages) at PepsiCo, Danone, Novartis, Pernod Ricard, Sodastream and Congo Brands (PRIME).</p>
+          <p>CEO & Co-Founder – Ferdinand Barckhahn studied Economics in Gießen and Business Administration in Saarbrücken. Over the past 25 years, he has gained international leadership experience in General Management and Marketing with PepsiCo, Danone, Novartis, Pernod Ricard, SodaStream and Congo Brands (Prime Hydration). Under his leadership, brands and business units consistently achieved growth in market share, profit and revenue. Most recently, he led the EMEA (Europe, Middle East, Africa) region.</p>
         </div>
       </div>
       <div class="profile">
         <img src="images/henner.jpg" alt="Henner Rinsche">
         <div>
           <h4>Henner Rinsche</h4>
-          <p>Co-Founder – Visionary innovator in the FMCG sector with a strong track record of building global brands. Led groundbreaking developments at top companies including SodaStream and Leifheit.</p>
+          <p>Co-Founder – Henner Rinsche studied European Business in England and Germany. He held leadership roles in General Management and Marketing at Procter & Gamble, PepsiCo, Danone and Henkel, working in London, Warsaw, Frankfurt, Düsseldorf and Munich. From 2011, he was Managing Director for Germany/Austria and from 2015 President Europe at SodaStream. Under his leadership, revenue and profit multiplied. The SodaStream share price increased tenfold from $14 in 2015 to $144 in 2018. From 2019 to 2023, he was CEO of the publicly listed Leifheit AG. Through innovation and marketing, he led a successful turnaround, with revenues rising by 16% in 2020 and 6% in 2021. The stock reached an all-time high of nearly €50.</p>
         </div>
       </div>
     </section>
@@ -147,6 +228,17 @@
       </div>
     </section>
   </div>
+
+  <footer>
+    &copy; 2025 G.O.A.T. Brands UG (haftungsbeschränkt) i.Gr. – Ernst-Ludwig-Straße 89, 63329 Egelsbach, Deutschland.<br>
+    Geschäftsführer: Ferdinand Barckhahn<br>
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutzerklärung</a> |
+    <a href="mailto:info@goat-brands.com">Kontakt</a>
+  </footer>
+</body>
+</html>
+
 
   <footer>
     &copy; 2025 G.O.A.T. Brands UG (haftungsbeschränkt) i.Gr. – Ernst-Ludwig-Straße 89, 63329 Egelsbach, Deutschland.<br>
